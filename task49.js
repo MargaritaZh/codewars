@@ -12,12 +12,12 @@ patrick feeney => P.F
 
 function abbrevName(name) {
   let res = name[0].toUpperCase();
-  for (let i=1; i<name.length;i++){
-    if(name[i]===' '){
-    res += '.' + name[i+1].toUpperCase();
+  for (let i = 1; i < name.length; i++) {
+    if (name[i] === " ") {
+      res += "." + name[i + 1].toUpperCase();
     }
   }
-  return res
+  return res;
 }
 
 /*
@@ -26,4 +26,4 @@ assert.strictEqual(abbrevName("Patrick Feenan"), "P.F");
 assert.strictEqual(abbrevName("Evan Cole"), "E.C");
 assert.strictEqual(abbrevName("P Favuzzi"), "P.F");
 assert.strictEqual(abbrevName("David Mendieta"), "D.M");*
-/
+*/
