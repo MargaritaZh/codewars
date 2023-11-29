@@ -10,6 +10,11 @@ Sam Harris => S.H
 patrick feeney => P.F
 */
 
+function abbrevName2(name) {
+  var nameArray = name.split(" ");
+  return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+}
+
 function abbrevName(name) {
   let res = name[0].toUpperCase();
   for (let i = 1; i < name.length; i++) {
@@ -20,6 +25,7 @@ function abbrevName(name) {
   return res;
 }
 
+//Метод split() разбивает объект String на массив строк путём разделения строки указанной подстрокой.
 /*
 assert.strictEqual(abbrevName("Sam Harris"), "S.H");
 assert.strictEqual(abbrevName("Patrick Feenan"), "P.F");
