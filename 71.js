@@ -18,7 +18,9 @@
 // assert.strictEqual('#lOVEWINS'.isUpperCase(), false, '#lOVEWINS is not upper case');
 // assert.strictEqual('#LOVEWINS'.isUpperCase(), true, '#LOVEWINS is upper case');
 
+
+String.prototype.isUpperCase=function() {return this==this.toUpperCase()}
+
 String.prototype.isUpperCase = function() {
     return this.valueOf() === this.toUpperCase();
 };
-
