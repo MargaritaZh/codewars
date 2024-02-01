@@ -36,4 +36,3 @@ function sumArray(array) {
 }
 
 
-console.log(sumArray([0, 1, 6, 10, 10]));
