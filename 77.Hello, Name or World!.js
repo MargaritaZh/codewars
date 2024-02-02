@@ -17,6 +17,9 @@
 // assert.strictEqual(hello(''), 'Hello, World!', "returns 'Hello, World!' when name is an empty string");
 
 function hello(name) {
+    return `Hello, ${name ? name[0].toUpperCase() + name.slice(1).toLowerCase() : "World"}!`
+}
+function hello2(name) {
     if (name && name.length > 0) {
         // Если имя задано и не пустое
         const capitalized = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
