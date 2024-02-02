@@ -17,7 +17,7 @@
 
 correct = s => s.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S')
 
-function correct(string) {
+function correct2(string) {
     const corrections = {
         '5': 'S',
         '0': 'O',
