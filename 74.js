@@ -8,7 +8,7 @@ function sumMix(x){
 }
 
 
-function sumMix(arr) {
+function sumMix2(arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
         let element = parseFloat(arr[i]);
