@@ -26,3 +26,5 @@ var cubeChecker = function(volume, side){
 
     return calculatedVolume === volume;
 };
+
+
